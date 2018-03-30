@@ -28,7 +28,7 @@ describe('#Person', ()=>{
         })
         */
 
-        it.only("should return a finite number(not Nan nor Infinity",()=>{
+        it("should return a finite number(not Nan nor Infinity",()=>{
             const number = Person.rollDice(4, 20);
             _.isFinite(number).should.be.true;
             log("Number: " + number);

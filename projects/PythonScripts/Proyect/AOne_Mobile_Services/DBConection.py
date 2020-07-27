@@ -56,6 +56,7 @@ class ContactDBApp:
 
     def find_contact_by_name(self, contact):
         query = f"select * from contact_app where name= '{contact.get_name()}'"
+
         return execute_query(query)
 
     def find_all_contact(self):

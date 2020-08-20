@@ -61,16 +61,12 @@ def scrapping_euro():
 
     return lista_entidades
 
-for item in entidad_conexion_db.buscar_todas_las_entidades():
-    print(item)
 
-"""
 euro_list = scrapping_euro()
 print("Euro")
 for item in euro_list:
     entidad_conexion_db.agregar_entidad(item)
 
-"""
 dolar_list = scrapping_dolar()
 print("Dolar")
 for item in dolar_list:

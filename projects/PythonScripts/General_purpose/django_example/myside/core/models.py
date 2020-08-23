@@ -5,8 +5,9 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 # Create your models here.
 
 class Person(models.Model):
-    last_name = models.TextField()
-    first_name = models.TextField()
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+
     course = models.ManyToManyField("Course", blank=True)
 
     def __str__(self):

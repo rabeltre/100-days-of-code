@@ -19,11 +19,11 @@ print(valor)
 
 valor = driver.find_element_by_xpath('//*[@id="customers"]/tbody/tr[2]/td[3]').text
 print(valor)
-"""
 row = len(driver.find_elements_by_xpath('//*[@id="customers"]/tbody/tr'))
 
 col = len(driver.find_elements_by_xpath('//*[@id="customers"]/tbody/tr[1]/th'))
 
+"""
 for n in range(2, row+1):
     for b in range(1, col+1):
         dato= driver.find_element_by_xpath('//*[@id="customers"]/tbody/tr['+ str(n)+']/td['+str(b)+']').text

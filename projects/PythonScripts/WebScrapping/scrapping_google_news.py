@@ -14,6 +14,7 @@ if __name__== '__main__':
 
         #news_dia_mes_año.txt
         now = datetime.now().strftime('%d_%m_%Y')
+        
         file_path = f'news/news_{now}.txt'
 
         with open(file_path, '+w') as file:
